@@ -1,0 +1,96 @@
+body {
+  display: flex;
+  justify-content: center;
+  border: 0;
+}
+
+container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 650px;
+  margin: 20 20 20 20;
+  padding: 20 20 20 20;
+  border: 1px solid #2c2c2c;
+}
+
+title {
+  font-weight: Bold;
+}
+
+.stickers {
+  font-weight: Bold;
+}
+
+hr {
+  width: 95%;
+  color: grey;
+}
+
+section {
+  width: 99%;
+}
+
+.infoname {
+  display: flex;
+  justify-content: left;
+  border: 1px solid #179c43;
+}
+
+form {
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  border: 1px solid #22c01c;
+}
+
+.name {
+  width: 270px;
+}
+
+#first-name {
+  width: 70px;
+}
+
+#last-name {
+  width: 120px;
+}
+
+input {
+  box-shadow: 0px -2px 1px #575757;
+  border: 1px solid #a0a0a0;
+  margin-right: 4px;
+}
+
+input:focus, textarea:focus {
+  border: 1.5px solid #000;
+}
+
+input:hover, textarea:focus {
+  border-color: #646464;
+}
+
+.birth {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #6d156d;
+}
+
+.genderscroll {
+  width: 270px;
+}
+
+.datebirth {
+  width: 350px;
+}
+
+.Dateinput {
+  display: flex;
+  justify-content: space-between;
+}
+
+infocontact {
+  display: flex;
+  flex-wrap: wrap;
+}
+/*# sourceMappingURL=style.css.map */
