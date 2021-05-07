@@ -1,20 +1,32 @@
 body {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   border: 0;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
 }
 
 container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: center;
   width: 650px;
-  margin: 20 20 20 20;
-  padding: 20 20 20 20;
   border: 1px solid #2c2c2c;
 }
 
+.Identity,
+.Contact,
+.Information {
+  width: 650px;
+  padding: 10px;
+}
+
 title {
+  width: 650px;
   font-weight: Bold;
 }
 
@@ -29,30 +41,21 @@ hr {
   color: grey;
 }
 
-section {
-  width: 99%;
-}
-
-.infoname {
-  display: flex;
-  justify-content: left;
-  border: 1px solid #179c43;
-}
-
 form {
   display: flex;
   justify-content: left;
   width: 100%;
   padding-top: 10px;
-  border: 1px solid #22c01c;
+  border: 1px solid white;
 }
 
 .name {
-  width: 270px;
+  width: 325px -10px;
 }
 
 #first-name {
   width: 70px;
+  margin-right: 4px;
 }
 
 #last-name {
@@ -62,21 +65,25 @@ form {
 input {
   box-shadow: 0px -2px 1px #575757;
   border: 1px solid #a0a0a0;
-  margin-right: 4px;
+  width: 285px;
 }
 
-input:focus, textarea:focus {
+input:focus,
+input textarea:focus {
   border: 1.5px solid #000;
+  box-shadow: 0px -2px 2px black;
 }
 
-input:hover, textarea:focus {
+input:hover,
+input textarea:focus {
   border-color: #646464;
 }
 
 .birth {
   display: flex;
   justify-content: space-between;
-  border: 1px solid #6d156d;
+  flex-wrap: wrap;
+  border: 1px solid white;
 }
 
 .genderscroll {
@@ -87,9 +94,14 @@ input:hover, textarea:focus {
   width: 350px;
 }
 
-.Dateinput {
+.Dateinput,
+.phonenumber {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 130px;
 }
 
 .infocontact {
@@ -100,42 +112,30 @@ input:hover, textarea:focus {
 
 .Adresse {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: space-between;
-}
-
-.Information {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-between;
 }
 
 .birthdate {
-  width: 20px;
-}
-
-.phonenum {
   width: 25px;
 }
 
-.half {
-  width: 300px;
+.phonenum {
+  width: 30px;
 }
 
-.halfinput {
-  width: 290px;
+.half {
+  width: 305px;
 }
 
 .full {
-  width: 630px;
+  width: 610px;
 }
 
 textarea {
-  display: block;
-  width: 100%;
-  height: 120px;
+  width: 620px;
+  height: 130px;
   box-sizing: border-box;
   margin-bottom: 20px;
 }
